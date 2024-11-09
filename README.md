@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Installation and Setup Guide
 
-First, run the development server:
+## Libraries to Install and Commands to Run
+
+### 1. **Django & Django Rest Framework**
+
+Install Django and Django Rest Framework:
+
+```bash
+pip install django djangorestframework
+```
+
+To apply the model migrations:
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+### 2. **Django Extensions**
+
+Install `django-extensions` to use `call_command` for data initialization:
+
+```bash
+pip install django-extensions
+```
+
+### 3. **PostgreSQL (psycopg2)**
+
+Install the Python library for PostgreSQL:
+
+```bash
+pip install psycopg2
+pip install psycopg2-binary
+```
+
+### 4. **Colors**
+
+The following colors are defined for the project:
+- Water Green / Blue: `#0cc0df`
+- Green: `#00bf63`
+- Bright Red: `#ff3131`
+- Orange: `#ff914d`
+- White: `#ffffff`
+- Light Gray: `#eeeff4`
+
+### 5. **Figma Dimensions**
+
+The frame size on Figma is `1512x982`.
+
+### 6. **Tailwind CSS**
+
+To install Tailwind CSS and its dependencies, run the following commands:
+
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+### 7. **TypeScript**
+
+Install TypeScript and the necessary types for React and Node.js:
+
+```bash
+npm install --save-dev typescript @types/react @types/node
+```
+
+### 8. **Create a Next.js Application**
+
+To create a new Next.js application, run:
+
+```bash
+npx create-next-app@latest
+```
+
+### 9. **Start the Frontend**
+
+To start the frontend development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 10. **Axios**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Install Axios for HTTP requests:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm install axios
+```
 
-## Learn More
+### 11. **CORS in Django**
 
-To learn more about Next.js, take a look at the following resources:
+Install the CORS package for managing cross-origin resource sharing policies in Django:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pip install django-cors-headers
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This guide covers the installation steps for libraries and environment setup for the project. Ensure to follow the commands in order to avoid configuration errors.
