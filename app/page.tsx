@@ -1,8 +1,8 @@
-// app/page.tsx
-"use client"; // Nécessaire pour utiliser les hooks
+
+"use client";
 
 import { useEffect } from "react";
-import { useRouter } from "next/navigation";  // Utiliser `next/navigation` ici
+import { useRouter } from "next/navigation";
 
 export default function Page() {
   const router = useRouter();

@@ -63,12 +63,12 @@ const ProjectsComponent: React.FC = () => {
                 {/* Eye Icon for project details */}
                 <EyeIcon
                   className="h-6 w-6 text-black cursor-pointer"
-                  onClick={() => router.push(`/projectdetail/${project.id}`)} // Rediriger vers la page /projectdetail
+                  onClick={() => router.push(`/projectdetail/${project.id}`)}
                 />
                 {/* Pencil Icon for project editing */}
                 <PencilIcon
                   className="h-6 w-6 text-black cursor-pointer"
-                  onClick={() => router.push(`/editproject/${project.id}`)} // Rediriger vers la page /editproject
+                  onClick={() => router.push(`/editproject/${project.id}`)} 
                 />
               </td>
             </tr>

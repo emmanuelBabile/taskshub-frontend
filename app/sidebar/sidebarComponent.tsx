@@ -24,7 +24,7 @@ const SidebarComponent: React.FC = () => {
       } transition-all duration-300`}
       style={{
         borderTopRightRadius: "15px",
-        height: "80vh", // Vous pouvez ajuster cette valeur pour réduire la hauteur
+        height: "80vh", 
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

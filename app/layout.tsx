@@ -1,7 +1,5 @@
-// layout.tsx
+
 import './globals.css';
-import Sidebar from './components/Sidebar';
-import Page from './page';
 
 export default function RootLayout({
   children,
